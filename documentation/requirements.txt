@@ -1,0 +1,18 @@
+Kau system design
+
+Functional requirements
+
+There should be a client app and a server app
+Server app is the main component and should contain the necessary logic for messaging
+Client app is used by each registered client. User starts the cli, enters his email and password, enters the email id
+of the person he wants to message. A sent/received type UI in the terminal is established. Any messages that were part
+of the conversation session in the last X minutes are displayed. User sends a message and the message is sent when he
+clicks Enter. User exits by clicking Ctrl + C.
+
+Non functional requirements
+Only one distinct user to user session should be allowed by the server, i:e, a user should not be able to open multiple
+terminal windows for talking to the same other user. If the user tries, an error message will be displayed.
+Near Instantaneous message delivery. Minimum delay. Should be consistent and partition tolerant first, highly available
+later.
+Websocket based to maintain a persistent connection between a client and the server. For load balancing using HAP,
+read here: https://www.haproxy.com/blog/websockets-load-balancing-with-haproxy/

@@ -1,6 +1,6 @@
-package Kau.letter.blob;
+package Kau.data.letter.blob;
 
-import Kau.Blob;
+import Kau.data.Blob;
 
 public class LetterBlob extends Blob {
     private final LetterBlobMetadata metadata;

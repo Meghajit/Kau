@@ -1,6 +1,6 @@
-package Kau.user.preference;
+package Kau.data.user.preference;
 
-import Kau.receipt.Receipt;
+import Kau.data.receipt.Receipt;
 
 public class ReceiptPreference extends Preference {
 

@@ -1,6 +1,6 @@
-package Kau.letter;
+package Kau.data.letter;
 
-import Kau.receipt.Receipt;
+import Kau.data.receipt.Receipt;
 
 import java.time.Instant;
 

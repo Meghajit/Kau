@@ -1,6 +1,6 @@
-package Kau.user.preference;
+package Kau.data.user.preference;
 
-import Kau.user.User;
+import Kau.data.user.User;
 
 import java.util.List;
 

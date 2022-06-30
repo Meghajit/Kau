@@ -1,6 +1,6 @@
-package Kau.letter.message;
+package Kau.data.letter.message;
 
-import Kau.Metadata;
+import Kau.data.Metadata;
 
 public class MessageMetadata extends Metadata {
     public MessageMetadata() {

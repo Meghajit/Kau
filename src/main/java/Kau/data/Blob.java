@@ -1,6 +1,6 @@
-package Kau;
+package Kau.data;
 
-import Kau.letter.blob.ContentType;
+import Kau.data.letter.blob.ContentType;
 
 import java.io.Serializable;
 

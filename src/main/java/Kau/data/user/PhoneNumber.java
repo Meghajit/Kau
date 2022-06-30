@@ -1,4 +1,4 @@
-package Kau.user;
+package Kau.data.user;
 
 public class PhoneNumber {
     private final String phoneNumber;

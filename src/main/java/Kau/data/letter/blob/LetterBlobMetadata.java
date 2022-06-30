@@ -1,7 +1,7 @@
-package Kau.letter.blob;
+package Kau.data.letter.blob;
 
-import Kau.Metadata;
-import Kau.user.User;
+import Kau.data.Metadata;
+import Kau.data.user.User;
 
 public class LetterBlobMetadata extends Metadata {
     private final User sender;

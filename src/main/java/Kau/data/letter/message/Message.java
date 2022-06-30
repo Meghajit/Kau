@@ -1,4 +1,4 @@
-package Kau.letter.message;
+package Kau.data.letter.message;
 
 import java.io.Serializable;
 import java.nio.charset.Charset;

@@ -1,4 +1,4 @@
-package Kau.letter.blob;
+package Kau.data.letter.blob;
 
 public enum ContentType {
     DOCUMENT,

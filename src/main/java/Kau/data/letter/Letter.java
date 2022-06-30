@@ -1,7 +1,7 @@
-package Kau.letter;
+package Kau.data.letter;
 
-import Kau.Blob;
-import Kau.letter.message.Message;
+import Kau.data.Blob;
+import Kau.data.letter.message.Message;
 
 import java.io.Serializable;
 

@@ -1,4 +1,4 @@
-package Kau.user.preference;
+package Kau.data.user.preference;
 
 public abstract class Preference {
     private final PreferenceType preferenceType;

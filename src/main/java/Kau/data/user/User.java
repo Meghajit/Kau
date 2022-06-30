@@ -1,7 +1,7 @@
-package Kau.user;
+package Kau.data.user;
 
-import Kau.Blob;
-import Kau.user.preference.Preference;
+import Kau.data.Blob;
+import Kau.data.user.preference.Preference;
 
 import java.util.UUID;
 

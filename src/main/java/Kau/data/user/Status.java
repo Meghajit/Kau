@@ -1,4 +1,4 @@
-package Kau.user;
+package Kau.data.user;
 
 import java.nio.charset.Charset;
 

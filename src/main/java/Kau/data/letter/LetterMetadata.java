@@ -1,6 +1,6 @@
-package Kau.letter;
+package Kau.data.letter;
 
-import Kau.Metadata;
+import Kau.data.Metadata;
 
 import java.util.UUID;
 

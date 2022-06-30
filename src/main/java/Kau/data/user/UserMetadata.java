@@ -1,6 +1,6 @@
-package Kau.user;
+package Kau.data.user;
 
-import Kau.Metadata;
+import Kau.data.Metadata;
 
 import java.time.Instant;
 

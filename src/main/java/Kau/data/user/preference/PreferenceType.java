@@ -1,4 +1,4 @@
-package Kau.user.preference;
+package Kau.data.user.preference;
 
 public enum PreferenceType {
     RECEIPTS,

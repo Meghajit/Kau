@@ -1,11 +1,14 @@
 package Kau.data.user.preference;
 
-import Kau.data.user.User;
-
 import java.util.List;
+import java.util.UUID;
+
+import static Kau.data.user.preference.PreferenceType.BLOCKED_USERS;
 
 public class BlockedUserListPreference extends Preference {
-    public BlockedUserListPreference(PreferenceType preferenceType, List<User> value) {
-        super(preferenceType, value);
+    private static final PreferenceType PREFERENCE_TYPE = BLOCKED_USERS;
+
+    public BlockedUserListPreference(List<UUID> value) {
+        super(PREFERENCE_TYPE, value);
     }
 }

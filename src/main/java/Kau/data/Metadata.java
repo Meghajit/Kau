@@ -1,4 +1,4 @@
-package Kau;
+package Kau.data;
 
 import java.io.Serializable;
 

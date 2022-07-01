@@ -1,11 +1,14 @@
 package Kau.data.user.preference;
 
-import Kau.data.user.User;
-
 import java.util.List;
+import java.util.UUID;
+
+import static Kau.data.user.preference.PreferenceType.MUTED_USERS;
 
 public class MutedUserListPreference extends Preference {
-    public MutedUserListPreference(PreferenceType preferenceType, List<User> value) {
-        super(preferenceType, value);
+    private static final PreferenceType PREFERENCE_TYPE = MUTED_USERS;
+
+    public MutedUserListPreference(List<UUID> value) {
+        super(MUTED_USERS, value);
     }
 }

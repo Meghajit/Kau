@@ -1,6 +1,8 @@
 package Kau.data.user.preference;
 
 public enum PreferenceType {
-    RECEIPTS,
-    LAST_SEEN
+    RECEIPT,
+    LAST_SEEN,
+    BLOCKED_USERS,
+    MUTED_USERS
 }

@@ -1,0 +1,97 @@
+[
+  {
+    "title": "Letter",
+    "properties": {
+      "_id": {
+        "bsonType": "objectId"
+      },
+      "message": {
+        "text": {
+          "bsonType": "binData"
+        },
+        "charset": {
+          "bsonType": "string"
+        }
+      },
+      "blob": {
+        "contentType": {
+          "bsonType": "string"
+        },
+        "accessURL": {
+          "bsonType": "string"
+        }
+      },
+      "senderUUID": {
+        "bsonType": "string"
+      },
+      "receiverUUID": {
+        "bsonType": "string"
+      },
+      "sentTime": {"bsonType": "timestamp"},
+      "deliveredTime": {"bsonType": "timestamp"},
+      "readTime": {"bsonType": "timestamp"}
+    }
+  },
+  {
+    "title": "UserProfile",
+    "properties": {
+      "_id": {
+        "bsonType": "objectId"
+      },
+      "uuid": { "bsonType": "string"},
+      "phoneNumber": { "bsonType": "string"},
+      "countryCode": { "bsonType": "string"},
+      "metadata": {
+        "appVersion":{"bsonType": "string"},
+        "registrationTime": {"bsonType": "timestamp"},
+        "deviceName":{"bsonType": "string"},
+        "osVersion": {"bsonType": "string"}
+      }
+    }
+  },
+  {
+    "title": "UserIdentity",
+    "properties": {
+      "_id": {
+        "bsonType": "objectId"
+      },
+      "uuid": { "bsonType": "string"},
+      "userName":  {
+        "username": {
+          "bsonType": "binData"
+        },
+        "usernameCharset": {
+          "bsonType": "string"
+        }
+      },
+      "status":  {
+        "statusText": {
+          "bsonType": "binData"
+        },
+        "statusTextCharset": {
+          "bsonType": "string"
+        }
+      },
+      "profilePicture": {
+        "contentType": {
+          "bsonType": "string"
+        },
+        "accessURL": {
+          "bsonType": "string"
+        }
+      },
+      "preferences" : {
+        "bsonType": "array",
+        "items" : {
+          "preferenceType" : {
+            "bsonType": "string"
+          },
+          "value" : {
+            "bsonType": "binData"
+          }
+        }
+      },
+      "lastOnlineTime":{"bsonType": "timestamp"}
+    }
+  }
+]

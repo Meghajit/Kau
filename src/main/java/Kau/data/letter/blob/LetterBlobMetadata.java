@@ -12,4 +12,9 @@ public class LetterBlobMetadata extends Metadata {
         this.receiver = receiver;
         this.sender = sender;
     }
+
+    @Override
+    public String toString() {
+        return String.format("{\nsender : %s,\n receiver: %s\n}", sender, receiver);
+    }
 }

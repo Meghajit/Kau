@@ -6,4 +6,9 @@ public class MessageMetadata extends Metadata {
     public MessageMetadata() {
         super();
     }
+
+    @Override
+    public String toString() {
+        return "{}";
+    }
 }

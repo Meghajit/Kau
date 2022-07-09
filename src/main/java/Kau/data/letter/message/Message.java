@@ -1,15 +1,15 @@
 package Kau.data.letter.message;
 
 import java.io.Serializable;
-import java.nio.charset.Charset;
+import java.io.UnsupportedEncodingException;
 import java.nio.charset.StandardCharsets;
 
 public class Message implements Serializable {
     private final byte[] text;
-    private final Charset textCharset;
+    private final String textCharset;
     private final MessageMetadata metadata;
 
-    public Message(byte[] text, Charset textCharset, MessageMetadata metadata) {
+    public Message(byte[] text, String textCharset, MessageMetadata metadata) {
         this.text = text;
         this.textCharset = textCharset;
         this.metadata = metadata;
@@ -17,7 +17,18 @@ public class Message implements Serializable {
 
     public Message(byte[] text, MessageMetadata metadata) {
         this.text = text;
-        this.textCharset = StandardCharsets.UTF_8;
+        this.textCharset = StandardCharsets.UTF_8.name();
         this.metadata = metadata;
+    }
+
+    @Override
+    public String toString() {
+        String messageText = null;
+        try {
+            messageText = new String(text, textCharset);
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+        return String.format("{ text : %s,\n textCharset: %s,\n metadata: %s\n}", messageText, textCharset, metadata);
     }
 }

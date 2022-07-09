@@ -28,4 +28,8 @@ public class LetterMetadata extends Metadata {
         this.receiverUUID = receiverUUID;
         this.times = times;
     }
+
+    public UUID getReceiverUUID() {
+        return receiverUUID;
+    }
 }
